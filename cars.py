@@ -9,3 +9,12 @@ print(showroom)
 showroom.update({"Ram", "Equinox"})
 print(showroom)
 showroom.discard("Mustang")
+
+junkyard = {"Silverado", "Civic", "Impala", "X-Wing"}
+print(junkyard.intersection(showroom))
+showroom = showroom.union(junkyard)
+print(showroom)
+junkyard.discard("Civic")
+junkyard.discard("Impala")
+junkyard.discard("X-Wing")
+print(junkyard)
